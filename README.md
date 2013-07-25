@@ -86,8 +86,6 @@ Features desired (in roughly descending order of priority)
 Other considerations
 --------------------
 
-### Related/overlapping plugins
-
 -   [Mendeley Plugin](http://wordpress.org/plugins/mendeleyplugin/): Has a lot
     of similar functionality. Could probably use some of code base. Also
     consider how they will work together if Mendeley adopts ORCiD.
