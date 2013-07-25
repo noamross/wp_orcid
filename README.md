@@ -5,7 +5,7 @@ This is the development repo for a plugin I'm developing for academics to pull
 their ORCiD information into wordpress blogs.
 
 This is my first time developing a Wordpress plugin and I have limited PHP
-knowledge, so collaborators are welcome.
+knowledge, so collaborators are welcome.  Please fork this document, add your two cents as issues, or just hit me at [@noamross](http://twitter.com/noamross)
 
 Design Notes
 ============
