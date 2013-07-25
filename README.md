@@ -76,3 +76,9 @@ Features desired (in roughly descending order of priority)
     [teachPress](http://wordpress.org/plugins/teachpress/) and
     [BibliPlug](http://wordpress.org/plugins/enhanced-bibliplug/), or at least a
     transprent enough codebase that other plugin authors can use the code.
+    
+## Other considerations
+
+### Related/overlapping plugins
+
+ - [Mendeley Plugin](http://wordpress.org/plugins/mendeleyplugin/): Has a lot of similar functionality. Could probably use some of code base. Also consider how they will work together if Mendeley adopts ORCiD.
