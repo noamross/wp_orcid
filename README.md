@@ -11,7 +11,7 @@ Design Notes
 ============
 
 Overall Motivation and Goal
-===========================
+---------------------------
 
 Maintaining a public list of your publications on a website is an enormous pain
 in the ass. Right now, the main services for doing this are closed systems where
