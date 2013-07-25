@@ -47,6 +47,8 @@ Features desired (in roughly descending order of priority)
 
 -   Simple UI for most users, good options, API and documentation for geeks.
 -   Include your ORCiD as part of user metadata
+    - Several plugins allow custom fields alread, [Martin Fenner's](https://github.com/mfenner/contact-info-options) include ORCiD. Make compatible or just lift the code? Should the plugin check if ORCiD is already part of metadata?
+        -   How about allow advanced option: If `user_meta` already includes ORCiD, please specify field name.
 -   Import your works from ORCiD and store in the WP database, with fields for
     each part of the metadata
     -   Give option to automatically sync with ORCiD
