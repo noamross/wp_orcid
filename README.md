@@ -5,7 +5,8 @@ This is the development repo for a plugin I'm developing for academics to pull
 their ORCiD information into wordpress blogs.
 
 This is my first time developing a Wordpress plugin and I have limited PHP
-knowledge, so collaborators are welcome.  Please fork this document, add your two cents as issues, or just hit me at [@noamross](http://twitter.com/noamross).
+knowledge, so collaborators are welcome. Please fork this document, add your two
+cents as issues, or just hit me at [@noamross](http://twitter.com/noamross).
 
 Design Notes
 ============
@@ -47,8 +48,12 @@ Features desired (in roughly descending order of priority)
 
 -   Simple UI for most users, good options, API and documentation for geeks.
 -   Include your ORCiD as part of user metadata
-    - Several plugins allow custom fields already. [Martin Fenner's](https://github.com/mfenner/contact-info-options) includes ORCiD. Make compatible or just lift the code?
-        -   How about allow advanced option: If `user_meta` already includes ORCiD from another plugin, please specify field name.
+    -   Several plugins allow custom fields already. [Martin
+        Fenner's](https://github.com/mfenner/contact-info-options) includes
+        ORCiD. Make compatible or just lift the code?
+        -   How about allow advanced option: If `user_meta` already includes
+            ORCiD from another plugin, please specify field name.
+
 -   Import your works from ORCiD and store in the WP database, with fields for
     each part of the metadata
     -   Give option to automatically sync with ORCiD
@@ -63,6 +68,7 @@ Features desired (in roughly descending order of priority)
 
     -   A small thing, but many people want: highlight/bold the user's name
         within the list of authors
+    -   Include [COinS metadata](http://ocoins.info/)
 
 -   Filter works. For instance, display only peer-reviewed or figshare works.
 -   Integrate other services that use ORCiD. For instance, display
@@ -76,9 +82,24 @@ Features desired (in roughly descending order of priority)
     [teachPress](http://wordpress.org/plugins/teachpress/) and
     [BibliPlug](http://wordpress.org/plugins/enhanced-bibliplug/), or at least a
     transprent enough codebase that other plugin authors can use the code.
-    
-## Other considerations
+
+Other considerations
+--------------------
 
 ### Related/overlapping plugins
 
- - [Mendeley Plugin](http://wordpress.org/plugins/mendeleyplugin/): Has a lot of similar functionality. Could probably use some of code base. Also consider how they will work together if Mendeley adopts ORCiD.
+-   [Mendeley Plugin](http://wordpress.org/plugins/mendeleyplugin/): Has a lot
+    of similar functionality. Could probably use some of code base. Also
+    consider how they will work together if Mendeley adopts ORCiD.
+-   [BibTeX Importer](https://github.com/mfenner/bibtex-importer) has code for
+    the internal docs database.
+-   Here's the [specification for publication
+    data](http://support.orcid.org/knowledgebase/articles/118024#orcid-activities)
+    from ORCiD. Note that this doesn't contain all the citation fields, but a
+    text citation. An identifier field contains the DOI.
+    -   Perhaps we should just store the text citation, rather than trying to
+        parse the citation information. Could still add supplemental info this
+        way.
+
+-   [citeproc.php](https://bitbucket.org/rjerome/citeproc-php) could be used to
+    parse citations.
