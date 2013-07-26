@@ -101,3 +101,5 @@ Other considerations
 
 -   [citeproc.php](https://bitbucket.org/rjerome/citeproc-php) could be used to
     parse citations.
+-   Martin adds [some more comments](http://blog.martinfenner.org/2013/07/26/rss-feeds-for-scholarly-authors/).
+    Thinking we still need to store an identifier for each record, but not the data.
