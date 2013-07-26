@@ -54,9 +54,10 @@ Features desired (in roughly descending order of priority)
         -   How about allow advanced option: If `user_meta` already includes
             ORCiD from another plugin, please specify field name.
 
--   Import your works from ORCiD and store in the WP database, with fields for
-    each part of the metadata
-    -   Give option to automatically sync with ORCiD
+-   Import your works from ORCiD and store in the WP database.
+    -   Don't try to store all the metadata, just the identifiers.
+        - Note the plain-text cition may be in BibTeX form, and need parsing to display.
+    -   Give option to automatically sync with ORCiD periodically, or manual update button.
     -   Allow additional fields for works, e.g., links to press coverage and
         other author websites, self-hosted PDFs
 
